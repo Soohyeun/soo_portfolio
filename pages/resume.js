@@ -21,7 +21,7 @@ const Resume = () => {
     if (!showResume) {
       router.push("/");
     }
-  }, []);
+  }, [router]);
   return (
     <>
       {process.env.NODE_ENV === "development" && (
@@ -71,12 +71,21 @@ const Resume = () => {
               <div className="mt-5">
                 <h1 className="text-2xl font-bold">Education</h1>
                 <div className="mt-2">
-                  <h2 className="text-lg">{resume.education.universityName}</h2>
+                  <h2 className="text-lg">{resume.education[0].universityName}</h2>
                   <h3 className="text-sm opacity-75">
-                    {resume.education.universityDate}
+                    {resume.education[0].universityDate}
                   </h3>
                   <p className="text-sm mt-2 opacity-50">
-                    {resume.education.universityPara}
+                    {resume.education[0].universityPara}
+                  </p>
+                </div>
+                <div className="mt-2">
+                  <h2 className="text-lg">{resume.education[1].universityName}</h2>
+                  <h3 className="text-sm opacity-75">
+                    {resume.education[1].universityDate}
+                  </h3>
+                  <p className="text-sm mt-2 opacity-50">
+                    {resume.education[1].universityPara}
                   </p>
                 </div>
               </div>
@@ -109,11 +118,24 @@ const Resume = () => {
                     </div>
                   )}
 
-                  {resume.others && (
+                  {resume.clouds && (
                     <div className="mt-2 mob:mt-5">
-                      <h2 className="text-lg">Others</h2>
+                      <h2 className="text-lg">Clouds</h2>
                       <ul className="list-disc">
-                        {resume.others.map((other, index) => (
+                        {resume.clouds.map((other, index) => (
+                          <li key={index} className="ml-5 py-2">
+                            {other}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+
+                  {resume.databases && (
+                    <div className="mt-2 mob:mt-5">
+                      <h2 className="text-lg">Databases</h2>
+                      <ul className="list-disc">
+                        {resume.databases.map((other, index) => (
                           <li key={index} className="ml-5 py-2">
                             {other}
                           </li>

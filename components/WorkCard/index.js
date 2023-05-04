@@ -1,27 +1,31 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useTheme } from "next-themes";
 
-const WorkCard = ({ img, name, description, onClick }) => {
+const WorkCard = ({ name, company, description, period }) => {
+  const { theme } = useTheme();
+  const [mounted, setMounted] = useState();
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
   return (
     <div
-      className="overflow-hidden rounded-lg p-2 laptop:p-4 first:ml-0 link"
-      onClick={onClick}
+      className={`w-full p-2 mob:p-4 rounded-lg transition-all ease-out duration-300 ${
+        mounted && theme === "dark" ? "hover:bg-slate-800" : "hover:bg-slate-50"
+      } hover:scale-105 link`}
     >
-      <div
-        className="relative rounded-lg overflow-hidden transition-all ease-out duration-300 h-48 mob:h-auto"
-        style={{ height: "600px" }}
-      >
-        <img
-          alt={name}
-          className="h-full w-full object-cover hover:scale-110 transition-all ease-out duration-300"
-          src={img}
-        ></img>
-      </div>
-      <h1 className="mt-5 text-3xl font-medium">
-        {name ? name : "Project Name"}
-      </h1>
-      <h2 className="text-xl opacity-50">
-        {description ? description : "Description"}
-      </h2>
+      <p className="grid grid-cols-1 tablet:grid-cols-2 gap-4">
+        <h1 className="text-3xl">{name ? name : "Heading"}</h1>
+        <p className="mt-4 opacity-40 text-xl">
+          {period ? period : "##.#### ~ ##.####"}
+        </p>
+      </p>
+      <p className="mt-4 opacity-40 text-xl font-style: italic">
+        {company ? company : "company name"}
+      </p>
+      <p className="mt-4 opacity-40 text-xl">
+        {description ? description : "work description"}
+      </p>
     </div>
   );
 };
