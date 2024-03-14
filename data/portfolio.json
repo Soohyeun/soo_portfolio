@@ -28,24 +28,38 @@
     "projects": [
         {
             "id": "1",
-            "title": "SwapOmen",
-            "description": "Academic project - Trading app that makes easy for users to trade their items",
-            "imageSrc": "images/swapomen1.png",
-            "url": "https://swapomen.yurtle.net/"
+            "title": "Motopal",
+            "description": "Practicum project - Real-world driving app that helps everyone drive smoother, especially for people with ADHD. (This project has not been deployed yet.)",
+            "imageSrc": "images/motopal.png",
+            "url": "#"
         },
         {
             "id": "2",
+            "title": "ApplePie",
+            "description": "Hackathon (QDS 2024) - Health habit tracker app with rewards and social features",
+            "imageSrc": "images/applePie.png",
+            "url": "https://github.com/kevin-bcit/qds_team17"
+        },
+        {
+            "id": "3",
+            "title": "SwapOmen",
+            "description": "Academic project - Trading app that makes easy for users to trade their items",
+            "imageSrc": "images/swapomen1.png",
+            "url": "https://github.com/LinnyPurple/2800-202210-DTC09"
+        },
+        {
+            "id": "4",
             "title": "Immerse",
             "description": "Academic project - Social app designed for tourists who want to experience local culture by connecting local residents",
             "imageSrc": "images/immerse.png",
             "url": "https://comp1800-dtc14.web.app/"
         },
         {
-            "id": "3",
+            "id": "5",
             "title": "Chris: The Game",
-            "description": "Hackathon (Hack the Break 2022) - Python quiz game in 24hours with 4 team members",
+            "description": "Hackathon (Hack the Break 2022) - Python quiz game developed in 24hours with 4 team members",
             "imageSrc": "images/christhegame.png",
-            "url": "https://chris-the-game.netlify.app/"
+            "url": "https://github.com/jescalada/hack-the-break-2022"
         }
     ],
     "works": [
@@ -64,10 +78,10 @@
             "period": "Jan 2016 - Jun 2020"
         }
     ],
-    "aboutpara": "Hello! I am Soo Park and currently studying Computer Systems Technology at British Columbia Institute of Technology (BCIT). I formely worked as associate software developer intern at HP Teradici. I am interested in cloud solutions and web development. ",
+    "aboutpara": "Hello! I am Soo Park and currently studying Computer Systems Technology at British Columbia Institute of Technology (BCIT). I formely worked as associate software developer intern at HP Teradici. I am interested in cloud solutions and web development.",
     "resume": {
         "tagline": "👋  I am studying computer systems technology.",
-        "description": "I completed four projects developing web-based applications and one internship in cloud solutions, mainly using terraform script on the Azure side.",
+        "description": "I completed five projects developing web and mobile applications and one internship in cloud solutions, mainly using terraform script on the Azure side.",
         "experiences": [
             {
                 "id": "1",
@@ -84,20 +98,25 @@
                 "bullets": "Designed, constructed, and operated KCC internal and external solar power plants (approx. 26MW)"
             }
         ],
-        "education": [{
-            "universityName": "British Columbia Institute of Technology (BCIT)",
-            "universityDate": "Jan 2022 - Present",
-            "universityPara": "Diploma, Computer Systems Technology (CST)"
-        },{
-            "universityName": "Sejong University",
-            "universityDate": "Mar 2012 - Feb 2016",
-            "universityPara": "Bachelor of Engineering Degree, Optical (Electronics) Engineering Major"
-        }],
+        "education": [
+            {
+                "universityName": "British Columbia Institute of Technology (BCIT)",
+                "universityDate": "Jan 2022 - Exptected May 2024",
+                "universityPara": "Diploma, Computer Systems Technology (CST)"
+            },
+            {
+                "universityName": "Sejong University",
+                "universityDate": "Mar 2012 - Feb 2016",
+                "universityPara": "Bachelor of Engineering Degree, Optical (Electronics) Engineering Major"
+            }
+        ],
         "languages": [
             "Python",
             "Java",
             "C",
             "Javascript",
+            "Kotlin",
+            "Dart",
             "HTML5",
             "CSS"
         ],
