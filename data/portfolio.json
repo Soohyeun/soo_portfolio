@@ -28,10 +28,10 @@
     "projects": [
         {
             "id": "1",
-            "title": "Motopal",
-            "description": "Practicum project - Real-world driving app that helps everyone drive smoother, especially for people with ADHD. (This project has not been deployed yet.)",
-            "imageSrc": "images/motopal.png",
-            "url": "#"
+            "title": "FitFriend",
+            "description": "Hackathon (StormHacks 2024) - An AI-powered training app that ensures correct form, provides motivation, and offers tips during your workouts",
+            "imageSrc": "images/fitfriend.png",
+            "url": "https://github.com/m-a-s-h-e-d/stormhacks-2024"
         },
         {
             "id": "2",
@@ -59,7 +59,7 @@
             "title": "Chris: The Game",
             "description": "Hackathon (Hack the Break 2022) - Python quiz game developed in 24hours with 4 team members",
             "imageSrc": "images/christhegame.png",
-            "url": "https://github.com/jescalada/hack-the-break-2022"
+            "url": "https://chris-the-game.netlify.app/"
         }
     ],
     "works": [
@@ -67,11 +67,25 @@
             "id": "1",
             "title": "Associate Software Developer - Co-op",
             "company": "HP Teradici, Burnaby, Canada",
-            "description": "Developed and maintained infrastructure-as-code to automate workstation deployment on Azure",
+            "description": "Developed and maintained Terraform, Bash, PowerShell, and Python scripts for Azure to automate the process of building remote workstations with the HP Anyware product",
             "period": "Jan 2023 - April 2023"
         },
         {
             "id": "2",
+            "title": "Front-end Developer - Practicum",
+            "company": "Videre Financiers, Canada",
+            "description": "Developed five responsive job board websites and an admin panel utilizing a multi-tenancy architecture, all integrated with a single back-end system",
+            "period": "April 2024 - May 2024"
+        },
+        {
+            "id": "3",
+            "title": "Full Stack Developer - Practicum",
+            "company": "Motopal, Canada",
+            "description": "Developed a real-world driving app that helps everyone drive smoother, especially for people with ADHD",
+            "period": "Jan 2024 - April 2024"
+        },
+        {
+            "id": "4",
             "title": "Electrical Engineer",
             "company": "KCC Corporation (Chemical Company), Young-in, South Korea",
             "description": "Designed, constructed, and operated KCC internal and external solar power plants (approx. 26MW)",
@@ -81,17 +95,32 @@
     "aboutpara": "Hello! I am Soo Park and currently studying Computer Systems Technology at British Columbia Institute of Technology (BCIT). I formely worked as associate software developer intern at HP Teradici. I am interested in cloud solutions and web development.",
     "resume": {
         "tagline": "👋  I am studying computer systems technology.",
-        "description": "I completed five projects developing web and mobile applications and one internship in cloud solutions, mainly using terraform script on the Azure side.",
+        "description": "I completed an internship focused on cloud solutions, primarily using Terraform scripts on Azure. Additionally, I worked on two practicums involving web and mobile development using React.js, Next.js, and Flutter with Dart.",
         "experiences": [
             {
                 "id": "1",
                 "dates": "Jan 2023 - Apr 2023",
                 "type": "Co-op",
                 "position": "Associtate software developer at HP Teradici",
-                "bullets": "Developed and maintained infrastructure-as-code to automate workstation deployment on Azure"
+                "bullets": "Developed and maintained Terraform, Bash, PowerShell, and Python scripts for Azure to automate the process of building remote workstations with the HP Anyware product"
             },
             {
                 "id": "2",
+                "dates": "April 2024 - May 2024",
+                "type": "Practicum",
+                "position": "Front-end Developer at Videre Financiers",
+                "bullets": "Developed five responsive job board websites and an admin panel utilizing a multi-tenancy architecture, all integrated with a single back-end system"
+            },
+            {
+                "id": "3",
+                "dates": "Jan 2024 - April 2024",
+                "type": "Practicum",
+                "position": "Full Stack Developer at Motopal",
+                "title": "Full Stack Developer - Practicum",
+                "bullets": "Developed a real-world driving app that helps everyone drive smoother, especially for people with ADHD"
+            },
+            {
+                "id": "4",
                 "dates": "Jan 2016 - Jun 2020",
                 "type": "Full Time",
                 "position": "Electrical Engineer at KCC Corporation",
@@ -101,8 +130,8 @@
         "education": [
             {
                 "universityName": "British Columbia Institute of Technology (BCIT)",
-                "universityDate": "Jan 2022 - Exptected May 2024",
-                "universityPara": "Diploma, Computer Systems Technology (CST)"
+                "universityDate": "Jan 2022 - May 2024",
+                "universityPara": "Diploma, Computer Systems Technology (CST) - Specialized in Predictive Analytics"
             },
             {
                 "universityName": "Sejong University",
@@ -123,7 +152,8 @@
         "frameworks": [
             "React",
             "jQuery",
-            "NodeJs"
+            "Node.js",
+            "Next.js"
         ],
         "clouds": [
             "Azure",
